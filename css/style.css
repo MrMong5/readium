@@ -1,0 +1,8 @@
+@font-face {
+   font-family: "GardensC";
+   src: url(".../fonts/GardensC.otf");
+}
+
+*{
+   font-family: "GardensC";
+}
