@@ -1,8 +1,13 @@
 @font-face {
    font-family: "GardensC";
-   src: url(".../fonts/GardensC.otf");
+   src: url("fonts/GardensC.otf");
 }
 
 *{
    font-family: "GardensC";
+}
+
+header{
+   display: flex;
+   justify-content: space-between;
 }
