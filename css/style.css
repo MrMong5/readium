@@ -1,13 +1,47 @@
+/*
+#FF4900 - osnova
+#0B61A4 - 2-oy
+#67E300 - 3-iy
+*/
+
 @font-face {
    font-family: "GardensC";
-   src: url("fonts/GardensC.otf");
+   src: url("../fonts/GardensC.otf");
 }
 
 *{
    font-family: "GardensC";
+   margin: 0;
+   padding: 0;
 }
 
 header{
+   background-color: #FF4900;
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+.top {
+   max-width: 1200px;
    display: flex;
    justify-content: space-between;
+   margin: auto;
+   align-items: center;
+}
+.top img{
+   width: 200px;
+}
+
+button{
+   font-size: 2em;
+   padding: 0.5em;
+   border-radius: 20px;
+   background-color: #0B61A4;
+}
+button:active{
+   background-color: #67E300;
+}
+
+.top h2{
+   color: #0B61A4;
 }
