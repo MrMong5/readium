@@ -14,7 +14,7 @@
    margin: 0;
    padding: 0;
 }
-
+/******************Шапка*******************/
 header{
    background-color: #FF4900;
    padding-top: 30px;
@@ -44,4 +44,37 @@ button:active{
 
 .top h2{
    color: #0B61A4;
+}
+
+/*Наши преимущества*/
+
+.advantage{
+   background-color: #67E300;
+   max-width: 1200px;
+   margin: auto;
+   padding: 30px;
+}
+
+.advantage h2{
+   text-align: center;
+}
+
+.advantage .content{
+   display: flex;
+   justify-content: space-between;
+   padding-top: 30px;
+}
+
+.advantage .item{
+   text-align: center;
+   transform: scale(1);
+   transition: transform 0.5s ease-out;
+}
+
+.advantage img{
+   width: 50%;
+}
+
+.advantage .item:hover{
+   transform: scale(1.2);
 }
