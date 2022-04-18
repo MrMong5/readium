@@ -46,17 +46,22 @@ button:active{
    color: #0B61A4;
 }
 
-/*Наши преимущества*/
+/*Общие свойства*/
 
-.advantage{
-   background-color: #67E300;
+section{
    max-width: 1200px;
    margin: auto;
    padding: 30px;
 }
 
-.advantage h2{
+section h2{
    text-align: center;
+}
+
+/*Наши преимущества*/
+
+.advantage{
+   background-color: #67E300;
 }
 
 .advantage .content{
@@ -77,4 +82,51 @@ button:active{
 
 .advantage .item:hover{
    transform: scale(1.2);
+}
+
+/*Особенности*/
+
+.features{
+   background-color: #FF4900;
+}
+
+.features .content{
+   display: flex;
+   justify-content: space-around;
+   padding-top: 30px;
+   font-size: larger;
+}
+
+ul.minus{
+   list-style-image: url("../img/minus.png");
+}
+
+ul.plus{
+   list-style-image: url("../img/plus.png");
+}
+
+/*Каталог*/
+
+.catalog{
+   background-color: #67E300;
+}
+
+.card{
+   border: solid 1px;
+   text-align: center;
+   background-color: white;
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+.card button{
+   font-size: 1.5em;
+   padding: 10px;
+}
+
+.price{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
