@@ -130,3 +130,47 @@ ul.plus{
    justify-content: space-between;
    align-items: center;
 }
+
+.container{
+   padding-top: 50px;
+   
+}
+
+label{
+   border: solid 1px;
+   padding: 10px;
+   border-radius: 50px;
+   font-size: 1.5em;
+   background-color: #FF4900;
+}
+
+.categories{
+   padding: 30px;
+}
+
+.catalog input{
+   opacity: 0;
+   position: absolute;
+}
+
+#giro:checked ~ .giro-container,
+#electro:checked ~ .electro-container,
+#segway:checked ~ .segway-container
+{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 50px;
+}
+
+#all:checked ~ .giro-container,
+#all:checked ~ .electro-container,
+#all:checked ~ .segway-container
+{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 50px;
+}
+
+.giro-container, .electro-container, .segway-container{
+   display: none;
+}
