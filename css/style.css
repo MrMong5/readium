@@ -9,13 +9,14 @@
    src: url("../fonts/GardensC.otf");
 }
 
-*{
+* {
    font-family: "GardensC";
    margin: 0;
    padding: 0;
 }
+
 /******************Шапка*******************/
-header{
+header {
    background-color: #FF4900;
    padding-top: 30px;
    padding-bottom: 30px;
@@ -28,90 +29,113 @@ header{
    margin: auto;
    align-items: center;
 }
-.top img{
+
+.top img {
    width: 200px;
 }
 
-button{
+button {
    font-size: 2em;
    padding: 0.5em;
    border-radius: 20px;
    background-color: #0B61A4;
+   outline: none;
 }
-button:active{
+
+button:active {
    background-color: #67E300;
 }
 
-.top h2{
+.top h2 {
    color: #0B61A4;
+}
+
+nav {
+   display: flex;
+   justify-content: space-around;
+   max-width: 1200px;
+   margin: auto;
+}
+
+nav a {
+   text-decoration: none;
+   color: #0B61A4;
+   font-size: 1.5em;
+   padding: 20px;
+}
+
+nav a:hover {
+   color: #FF4900;
 }
 
 /*Общие свойства*/
 
-section{
+section {
    max-width: 1200px;
    margin: auto;
    padding: 30px;
 }
 
-section h2{
+section h2 {
    text-align: center;
 }
 
 /*Наши преимущества*/
 
-.advantage{
+.advantage {
    background-color: #67E300;
 }
 
-.advantage .content{
+.advantage .content {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    padding-top: 30px;
+   flex-wrap: wrap;
 }
 
-.advantage .item{
+.advantage .item {
    text-align: center;
    transform: scale(1);
    transition: transform 0.5s ease-out;
 }
 
-.advantage img{
+.advantage img {
    width: 50%;
 }
 
-.advantage .item:hover{
+.advantage .item:hover {
    transform: scale(1.2);
 }
 
 /*Особенности*/
 
-.features{
+.features {
    background-color: #FF4900;
 }
 
-.features .content{
+.features .content {
    display: flex;
    justify-content: space-around;
    padding-top: 30px;
    font-size: larger;
+   flex-wrap: wrap;
 }
 
-ul.minus{
+ul.minus {
    list-style-image: url("../img/minus.png");
 }
 
-ul.plus{
+ul.plus {
    list-style-image: url("../img/plus.png");
 }
 
 /*Каталог*/
 
-.catalog{
+.catalog {
    background-color: #67E300;
 }
 
-.card{
+.card {
    border: solid 1px;
    text-align: center;
    background-color: white;
@@ -120,23 +144,23 @@ ul.plus{
    box-shadow: 5px 5px 5px rgb(0, 0, 0);
 }
 
-.card button{
+.card button {
    font-size: 1.5em;
    padding: 10px;
 }
 
-.price{
+.price {
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
 
-.container{
+.container {
    padding-top: 50px;
-   
+
 }
 
-label{
+label {
    border: solid 1px;
    padding: 10px;
    border-radius: 50px;
@@ -144,33 +168,271 @@ label{
    background-color: #FF4900;
 }
 
-.categories{
+.categories {
    padding: 30px;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
 }
 
-.catalog input{
+.catalog input {
    opacity: 0;
    position: absolute;
 }
 
-#giro:checked ~ .giro-container,
-#electro:checked ~ .electro-container,
-#segway:checked ~ .segway-container
-{
+#giro:checked~.giro-container,
+#electro:checked~.electro-container,
+#segway:checked~.segway-container {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   column-gap: 50px;
+   column-gap: 30px;
 }
 
-#all:checked ~ .giro-container,
-#all:checked ~ .electro-container,
-#all:checked ~ .segway-container
-{
+#all:checked~.giro-container,
+#all:checked~.electro-container,
+#all:checked~.segway-container {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   column-gap: 50px;
+   column-gap: 30px;
+   row-gap: 30px;
 }
 
-.giro-container, .electro-container, .segway-container{
+.giro-container,
+.electro-container,
+.segway-container {
    display: none;
+}
+
+/*Консультанты*/
+
+.consultant {
+   background-color: #0B61A4;
+}
+
+.consultant .content {
+   display: grid;
+   padding-top: 30px;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.consultant img {
+   width: 75%;
+   transition: transform 1s ease-in-out;
+}
+
+.consultant .cons {
+   font-size: 1.5em;
+   text-align: center;
+}
+
+.consultant img:hover {
+   transform: rotate(180deg);
+}
+
+/*Бренд*/
+
+.brend {
+   background-color: #67E300;
+}
+
+.brend .content {
+   display: flex;
+   justify-content: space-around;
+   padding-top: 30px;
+   flex-wrap: wrap;
+}
+
+.brend .content h2 {
+   color: #FF4900;
+   font-size: 1.5em;
+   padding: 0 10px;
+}
+
+/*ПЗ*/
+
+.info {
+   background-color: #FF4900;
+   font-size: 1.5em;
+}
+
+.info .content {
+   display: flex;
+   flex-direction: column;
+}
+
+.info img {
+   width: 20%;
+   border-radius: 50%;
+}
+
+.info .item {
+   display: flex;
+   align-items: center;
+   padding: 30px;
+}
+
+.info .p {
+   padding-left: 50px;
+}
+
+.right {
+   align-self: flex-end;
+   flex-direction: row-reverse;
+}
+
+/*ИНФА О КОМПАНИИ*/
+
+.about {
+   background-image: url("../img/about-us-bg.png");
+}
+
+.back {
+   background-image: url("../img/about-us-bg.png");
+   position: absolute;
+   left: 0;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   background-size: cover;
+   filter: opacity(50%);
+}
+
+.form {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.form input {
+   font-size: 1.5em;
+   padding: 10px;
+   border-radius: 20px;
+   outline: none;
+}
+
+.about p {
+   margin-top: 20px;
+   font-size: 1.5em;
+}
+
+/*dangeon*/
+
+footer {
+   background-color: #67E300;
+   position: relative;
+}
+
+footer>a {
+   display: block;
+   background-color: #FF4900;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+
+@media screen and (max-width: 1024) {
+
+   #giro:checked~.giro-container,
+   #electro:checked~.electro-container,
+   #segway:checked~.segway-container {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 30px;
+   }
+
+   #all:checked~.giro-container,
+   #all:checked~.electro-container,
+   #all:checked~.segway-container {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 30px;
+      row-gap: 30px;
+   }
+
+   .top{
+      padding: 0 10px;
+   }
+
+   footer .top{
+      padding-bottom: 50px;
+   }
+}
+
+@media screen and (max-width: 375px){
+   #giro:checked~.giro-container,
+   #electro:checked~.electro-container,
+   #segway:checked~.segway-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      column-gap: 30px;
+   }
+
+   #all:checked~.giro-container,
+   #all:checked~.electro-container,
+   #all:checked~.segway-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      column-gap: 30px;
+      row-gap: 30px;
+   }
+
+   .top{
+      flex-direction: column;
+   }
+
+   .top img, .top h2, .top button{
+      margin-top: 20px;
+   }
+
+   footer .top{
+      flex-direction: column-reverse;
+   }
+   footer img{
+      display: none;
+   }
+   nav{
+      flex-direction: column;
+   }
+   nav a{
+      text-align: center;
+   }
+   .features .content{
+      justify-content: flex-start;
+   }
+   .features h3{
+      margin-top: 20px;
+   }
+   .categories{
+      flex-direction: column;
+   }
+   .categories label{
+      text-align: center;
+      margin-top: 10px;
+   }
+   .container{
+      margin-top: 0;
+   }
+   .consultant .content {
+      grid-template-columns: 1fr;
+   }
+   .info .item {
+      flex-direction: column;
+   }
+   .info img{
+      width: 100%;
+   }
+
+   .info p{
+      padding-left: 0;
+   }
+   .back{
+      display: none;
+   }
+   .form{
+      flex-direction: column;
+   }
+   .form input, .form button{
+      width: 100%;
+      padding-top: 10px;
+      margin-top: 10px;
+   }
 }
