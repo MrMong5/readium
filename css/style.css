@@ -17,7 +17,7 @@
 
 /******************Шапка*******************/
 header {
-   background-color: #FF4900;
+   background-color: #111;
    padding-top: 30px;
    padding-bottom: 30px;
 }
@@ -38,7 +38,7 @@ button {
    font-size: 2em;
    padding: 0.5em;
    border-radius: 20px;
-   background-color: #0B61A4;
+   background-color: #f51616;
    outline: none;
 }
 
@@ -47,7 +47,7 @@ button:active {
 }
 
 .top h2 {
-   color: #0B61A4;
+   color: #fff;
 }
 
 nav {
@@ -59,7 +59,7 @@ nav {
 
 nav a {
    text-decoration: none;
-   color: #0B61A4;
+   color: #fff;
    font-size: 1.5em;
    padding: 20px;
 }
@@ -83,7 +83,8 @@ section h2 {
 /*Наши преимущества*/
 
 .advantage {
-   background-color: #67E300;
+   background-color: SlateGrey;
+   color: wheat;
 }
 
 .advantage .content {
@@ -110,12 +111,20 @@ section h2 {
 /*Особенности*/
 
 .features {
-   background-color: #FF4900;
+   background-color: #111;
+   color:#fff;
+}
+
+.hp{
+   width: 40%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .features .content {
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    padding-top: 30px;
    font-size: larger;
    flex-wrap: wrap;
@@ -130,6 +139,10 @@ ul.plus {
 }
 
 /*Каталог*/
+
+.img1 {
+   width: 30%;
+}
 
 .catalog {
    background-color: #67E300;
@@ -319,8 +332,9 @@ label {
 /*dangeon*/
 
 footer {
-   background-color: #67E300;
+   background-color: #1c1c1c;
    position: relative;
+   color: #fff;
 }
 
 footer>a {
